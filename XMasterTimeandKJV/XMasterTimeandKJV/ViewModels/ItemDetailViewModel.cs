@@ -12,5 +12,13 @@ namespace XMasterTimeandKJV.ViewModels
             Title = item?.Text;
             Item = item;
         }
+    }  public class WorkInstanceDetailViewModel : BaseViewModel
+    {
+        public WorkInstance WorkInstance { get; set; }
+        public WorkInstanceDetailViewModel(WorkInstance item = null)
+        {
+            Title = item?.Date.ToString();
+            WorkInstance = item;
+        }
     }
 }
